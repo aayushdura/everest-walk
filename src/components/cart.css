@@ -1,0 +1,24 @@
+.cart-container {
+  color: rgb(37, 33, 28);
+  margin-right: 9in;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4ch;
+}
+
+th {
+  padding: 1ch;
+}
+
+.empty-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.itemsInCart {
+  border-style: solid;
+}
