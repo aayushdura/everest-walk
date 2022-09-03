@@ -7,6 +7,9 @@ import ShoppingCartSharpIcon from "@mui/icons-material/ShoppingCartSharp";
 const Product = (props) => {
   const { prodDetails } = props;
   const dispatch = useDispatch();
+  const handleClick =()=>{
+    dispatch(addInCart(prodDetails))
+  }
   return (
     <div className="product-container">
       <h2>{prodDetails.name}</h2>
@@ -19,7 +22,7 @@ const Product = (props) => {
       <Button
         style={{ color: "	#ff4000" }}
         startIcon={<ShoppingCartSharpIcon />}
-        onClick={() => dispatch(addInCart(prodDetails))}
+        onClick={handleClick}
       >
         Add To Cart
       </Button>
